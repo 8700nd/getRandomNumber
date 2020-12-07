@@ -1,6 +1,6 @@
 package com.project.servlet;
 
-import com.project.random.GetRandomServlet;
+import com.project.random.GetRandom;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -9,14 +9,14 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet(name = "GetRandomServlet", urlPatterns = {"/random"})
-public class Servlet extends HttpServlet {
+public class GetRandomServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("application/json");
-        GetRandomServlet myRandom = new GetRandomServlet();
+        GetRandom myRandom = new GetRandom();
         response.getWriter().print(myRandom.randomNum());
     }
 }

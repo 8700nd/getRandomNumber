@@ -1,6 +1,6 @@
 package com.project.random;
 
-public class GetRandomServlet {
+public class GetRandom {
 
     public double randomNum() {
         double min = 0.00000001;

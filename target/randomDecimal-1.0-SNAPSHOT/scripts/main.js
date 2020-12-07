@@ -1,5 +1,5 @@
 (function() {
-    var oNumber = document.getElementById('number');
+    let oNumber = document.getElementById('number');
 
     function init(){
         console.log('init');
